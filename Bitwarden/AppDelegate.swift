@@ -11,25 +11,41 @@ import SwiftUI
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    var window: NSWindow!
-
+    var popover: NSPopover!
+    var statusBarItem: NSStatusItem!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
-
-        // Create the window and set the content view.
-        window = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
-            styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
-            backing: .buffered, defer: false)
-        window.isReleasedWhenClosed = false
-        window.center()
-        window.setFrameAutosaveName("Main Window")
-        window.contentView = NSHostingView(rootView: contentView)
-        window.makeKeyAndOrderFront(nil)
+        
+        let _popover = NSPopover()
+        
+        _popover.contentSize = NSSize(width: 375, height: 600)
+        _popover.behavior = .transient
+        _popover.contentViewController = NSHostingController(rootView: contentView)
+        
+        self.popover = _popover
+        
+        self.statusBarItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.squareLength))
+        
+        if (self.statusBarItem.button != nil) {
+            self.statusBarItem.button!.image = NSImage(named: "TrayIcon")
+            self.statusBarItem.button!.action = #selector(togglePopover(_:))
+        }
     }
 
+    @objc func togglePopover(_ sender: AnyObject?) {
+        if self.popover.isShown {
+            self.popover.performClose(sender)
+        } else if self.statusBarItem.button != nil {
+            self.popover.show(
+                relativeTo: self.statusBarItem.button!.bounds,
+                of: self.statusBarItem.button!,
+                preferredEdge: .minY
+            )
+        }
+    }
+    
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }

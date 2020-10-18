@@ -1,0 +1,3 @@
+[submodule "Bitwarden/browser"]
+	path = Bitwarden/browser
+	url = git@github.com:bitwarden/browser.git
