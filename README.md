@@ -1,11 +1,17 @@
-<h1 align="center">Bitwarden Menu</h1>
-<p align="center">![](Bitwarden/Assets.xcassets/AppIcon.appiconset/icon@128.png)</p>
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/jnsdrtlf/bitwarden-menubar/main/Bitwarden/Assets.xcassets/AppIcon.appiconset/icon%4032.png"/>
+  Bitwarden Menu
+</h1>
 
 **Bitwarden Menu** is a simple application for macOS that puts the
 [Bitwarden Browser Extension](https://github.com/bitwarden/browser)
 right into your menu bar.
 
-<p align="center">![](artwork/screenshot.png)</p>
+<p align="center">
+
+  ![](artwork/screenshot.png)
+
+</p>
 
 ## Installation
 As I am not enrolled in the Apple Developer Program, I cannot sign this
