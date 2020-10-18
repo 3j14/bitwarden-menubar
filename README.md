@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://raw.githubusercontent.com/jnsdrtlf/bitwarden-menubar/main/Bitwarden/Assets.xcassets/AppIcon.appiconset/icon%4032.png"/>
+  <img src="https://raw.githubusercontent.com/jnsdrtlf/bitwarden-menubar/main/Bitwarden/Assets.xcassets/AppIcon.appiconset/icon%4064.png"/>
   Bitwarden Menu
 </h1>
 
