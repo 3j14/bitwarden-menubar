@@ -3,6 +3,8 @@
   Bitwarden Menu
 </h1>
 
+**This project is not associated with the Bitwarden project nor 8bit Solutions LLC.**
+
 **Bitwarden Menu** is a simple application for macOS that puts the
 [Bitwarden Browser Extension](https://github.com/bitwarden/browser)
 right into your menu bar.
