@@ -11,8 +11,7 @@
 		DD387512253B176A0021B81B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD387511253B176A0021B81B /* ContentView.swift */; };
 		DD387514253B176C0021B81B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD387513253B176C0021B81B /* Assets.xcassets */; };
 		DD387517253B176C0021B81B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD387516253B176C0021B81B /* Preview Assets.xcassets */; };
-		DD38751A253B176C0021B81B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD387518253B176C0021B81B /* Main.storyboard */; };
-		DD387533253B3EF40021B81B /* app in Resources */ = {isa = PBXBuildFile; fileRef = DD387532253B3EF40021B81B /* app */; };
+		DD792BBD2579310500C436EF /* app in Resources */ = {isa = PBXBuildFile; fileRef = DD387532253B3EF40021B81B /* app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +20,6 @@
 		DD387511253B176A0021B81B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DD387513253B176C0021B81B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD387516253B176C0021B81B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DD387519253B176C0021B81B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD38751B253B176C0021B81B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD38751C253B176C0021B81B /* Bitwarden.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bitwarden.entitlements; sourceTree = "<group>"; };
 		DD387532253B3EF40021B81B /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; name = app; path = Bitwarden/app; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 				DD38750F253B176A0021B81B /* AppDelegate.swift */,
 				DD387511253B176A0021B81B /* ContentView.swift */,
 				DD387513253B176C0021B81B /* Assets.xcassets */,
-				DD387518253B176C0021B81B /* Main.storyboard */,
 				DD38751B253B176C0021B81B /* Info.plist */,
 				DD38751C253B176C0021B81B /* Bitwarden.entitlements */,
 				DD387515253B176C0021B81B /* Preview Content */,
@@ -140,8 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD387533253B3EF40021B81B /* app in Resources */,
-				DD38751A253B176C0021B81B /* Main.storyboard in Resources */,
+				DD792BBD2579310500C436EF /* app in Resources */,
 				DD387517253B176C0021B81B /* Preview Assets.xcassets in Resources */,
 				DD387514253B176C0021B81B /* Assets.xcassets in Resources */,
 			);
@@ -166,7 +162,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "pushd Bitwarden\n/Users/jonas/Workspace/Bitwarden/Bitwarden/build.sh\npopd\n";
+			shellScript = "pushd Bitwarden\n/Users/jonas/Documents/Code/Bitwarden/Bitwarden/build.sh\npopd\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -181,17 +177,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		DD387518253B176C0021B81B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD387519253B176C0021B81B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DD38751D253B176C0021B81B /* Debug */ = {
@@ -245,7 +230,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -300,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -327,7 +312,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = de.jonas.Bitwarden;
 				PRODUCT_NAME = "$(TARGET_NAME) Menu";
@@ -353,7 +338,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = de.jonas.Bitwarden;
 				PRODUCT_NAME = "$(TARGET_NAME) Menu";
