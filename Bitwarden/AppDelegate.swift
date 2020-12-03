@@ -8,7 +8,19 @@
 import Cocoa
 import SwiftUI
 
-@NSApplicationMain
+
+@main
+struct BitwardenMenu: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
+    var body: some Scene {
+        Settings {
+            EmptyView()
+        }
+    }
+}
+
+
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     var popover: NSPopover!
@@ -26,7 +38,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         self.popover = _popover
         
-        self.statusBarItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.squareLength))
+        self.statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
         
         if (self.statusBarItem.button != nil) {
             self.statusBarItem.button!.image = NSImage(named: "TrayIcon")
@@ -52,4 +64,3 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
 }
-
