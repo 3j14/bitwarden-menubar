@@ -41,7 +41,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
         
         if (self.statusBarItem.button != nil) {
-            self.statusBarItem.button!.image = NSImage(named: "TrayIcon")
+            self.statusBarItem.button!.image = NSImage(named: "StatusBarItem")
             self.statusBarItem.button!.action = #selector(togglePopover(_:))
         }
     }
