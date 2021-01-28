@@ -15,7 +15,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DD38750C253B176A0021B81B /* Bitwarden Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Bitwarden Menu.app"; path = "/Users/jonas/Documents/Code/Bitwarden/build/Debug/Bitwarden Menu.app"; sourceTree = "<absolute>"; };
 		DD38750F253B176A0021B81B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD387511253B176A0021B81B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DD387513253B176C0021B81B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -24,6 +23,7 @@
 		DD38751C253B176C0021B81B /* Bitwarden.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bitwarden.entitlements; sourceTree = "<group>"; };
 		DD387532253B3EF40021B81B /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; name = app; path = Bitwarden/app; sourceTree = "<group>"; };
 		DD78FD55253C56B000A6184C /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = build.sh; path = Bitwarden/build.sh; sourceTree = "<group>"; };
+		DDF717FF25C2E2AC0007592B /* Bitwarden Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bitwarden Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +43,7 @@
 				DD78FD55253C56B000A6184C /* build.sh */,
 				DD387532253B3EF40021B81B /* app */,
 				DD38750E253B176A0021B81B /* Bitwarden */,
+				DDF717FF25C2E2AC0007592B /* Bitwarden Menu.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,7 +86,7 @@
 			);
 			name = Bitwarden;
 			productName = Bitwarden;
-			productReference = DD38750C253B176A0021B81B /* Bitwarden Menu.app */;
+			productReference = DDF717FF25C2E2AC0007592B /* Bitwarden Menu.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -294,7 +295,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Bitwarden/Preview Content\"";
 				DEVELOPMENT_TEAM = T973CT77D5;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -305,7 +306,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.0.2;
+				MARKETING_VERSION = 0.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = de.jonas.Bitwarden;
 				PRODUCT_NAME = "$(TARGET_NAME) Menu";
 				SWIFT_VERSION = 5.0;
@@ -321,7 +322,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Bitwarden/Preview Content\"";
 				DEVELOPMENT_TEAM = T973CT77D5;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -332,7 +333,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.0.2;
+				MARKETING_VERSION = 0.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = de.jonas.Bitwarden;
 				PRODUCT_NAME = "$(TARGET_NAME) Menu";
 				SWIFT_VERSION = 5.0;
