@@ -5,6 +5,14 @@
 
 **This project is not associated with the Bitwarden project nor 8bit Solutions LLC.**
 
+**Note**: This application **no longer recieves updates** to the
+latest version of the Bitwarden Browser Extension as it
+uses the Safari Web Extension API starting from version 1.49.0.
+For more information see
+[`jnsdrtlf/bitwarden-menubar#2`](https://github.com/jnsdrtlf/bitwarden-menubar/issues/2).
+**The app currently uses a very old version (v1.48.1) of the extension. This will
+probably not change in the foreseeable future. Use at your own risk!**
+
 **Bitwarden Menu** is a simple application for macOS that puts the
 [Bitwarden Browser Extension](https://github.com/bitwarden/browser)
 right into your menu bar.
