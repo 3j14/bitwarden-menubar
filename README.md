@@ -9,7 +9,8 @@
 latest version of the Bitwarden Browser Extension as it
 uses the Safari Web Extension API starting from version 1.49.0.
 For more information see
-[`jnsdrtlf/bitwarden-menubar#2`](https://github.com/jnsdrtlf/bitwarden-menubar/issues/2).
+[`jnsdrtlf/bitwarden-menubar#2`](https://github.com/jnsdrtlf/bitwarden-menubar/issues/2)
+and [my post on community.bitwarden.com](https://community.bitwarden.com/t/full-fledged-menu-bar-mode/2587/18).
 **The app currently uses a very old version (v1.48.1) of the extension. This will
 probably not change in the foreseeable future. Use at your own risk!**
 
